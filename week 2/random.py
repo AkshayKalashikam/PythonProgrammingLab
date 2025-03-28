@@ -1,11 +1,11 @@
 import random
-n= random.randint (1,100)
-while True:
-    x= int(input("enter a number:"))
-    if(x>n):
-        print("too low")
+
+n=random.randint(1,100)
+while True: 
+    x = int(input("guess the number:"))
+    if(x<n):
+    	print("the number is too low")
     elif(x>n):
-        print("too high")
+        print("the number is too high")
     else:
-        print("congralutions,you found the number")
-    break
+        print("your guess is correct")
