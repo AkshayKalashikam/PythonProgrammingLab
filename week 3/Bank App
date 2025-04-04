@@ -1,16 +1,16 @@
-def credit (balance,value):
-    balance = balance + value
-    return balance
+def credit (bal,value):
+    bal = bal + value
+    return bal
     
-def debit (balance,value):  
-    balance = value - balance
-    return balance
+def debit (bal,value):  
+    bal = value - bal
+    return bal
     
-def show_balance(balance):
-    print (balance)
+def show_bal(bal):
+    print (bal)
     
     
-balance = 50000
-balance = credit(100000,balance)
-balance = debit(50000,balance)
-show_balance(balance)
+bal = 50000
+bal = credit(100000,bal)
+bal = debit(50000,bal)
+show_bal(bal)
