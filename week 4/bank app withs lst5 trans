@@ -1,0 +1,52 @@
+def credit(amount,bal,trans):
+    bal+=amount
+    print(amount,"balance added succesfully")
+    trans.append(amount)
+    return bal,trans
+
+def debit(amount,bal,trans):
+    if bal<amount:
+        print("insufficient bal")
+    else:
+        bal-=amount
+        print(amount,"debited succesfully")
+        tran.append(-amount)
+        return bal,trans
+        
+def show_bal(bal):
+    print("bal")
+    
+def last_five(trans):
+    print("last five trans")
+    for trans in trans[-5:]:
+    
+bal=0
+true = []
+
+while true:
+    print("aa randi randi kurchondi")
+    print("press 1 to credit")
+    print("press 2 to debit")
+    print("press 3 to show bal")
+    print("press 4 for last five trans")
+    print("press 5 for exit(dengay)")
+
+choice = int(input("enter the number:")) 
+if(choice ==1):
+    amount=int(input("enter the number:"))
+    bal,trans=cedit(amount,bal,trans)
+    
+if(choice==2):
+    amount=int(input("enter the number:"))
+    bal,trans=debit(amount,bal,trans)
+    
+if(choice==3):
+    trans=bal(bal)
+    
+elif(choice==4):
+    last_five_trans(trans)
+    
+elif(choice==5):
+    print("Dengay")
+   
+    
