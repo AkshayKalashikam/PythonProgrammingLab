@@ -9,11 +9,11 @@ def debit (bal,value):
 def show_bal(bal):
     print (bal)
     
-bal = int(input("enter the amount:"))
-amount = int(input("enter the amount to be credited or debited"))
-sys = int(input("pres1 to credit \n press2 to debit"))
+bal = int(input("enter the amount:")) 
+amount = int(input("enter the amount to be credited or debited :"))
+sys = int(input("pres1 to credit \n press2 to debit :"))    
 if(sys==1):
-   balance = credit(amount,bal)
+   bal = credit(amount,bal)
    show_bal(bal)
 if(sys==2):
    bal = debit(amount,bal)
