@@ -50,4 +50,3 @@ print(e3)
 required=(e1+e2+e3)*(o1+o2+o3)
 print(required)
 oddsum(l3,n3)
-        
