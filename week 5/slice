@@ -1,0 +1,94 @@
+# my_list = [1, 5, 10, 15, 20, 25, 30]
+# print(my_list[0:2])
+
+
+# my_list = [1, 5, 10, 15, 20, 25, 30]
+
+# my_list[0:2] = 50, 55
+# print(my_list)
+
+
+# my_list = [1, 5, 10, 15, 20, 25, 30]
+
+# print(my_list[1:5:2])
+
+
+# my_list = [1, 5, 10, 15, 20, 25, 30]
+
+# slice_list_from_start = my_list[:4]
+# print(slice_list_from_start)
+
+
+# my_list = [1, 5, 10, 15, 20, 25, 30]
+
+# slice_list_till_end = my_list[:4]
+# print(slice_list_till_end)
+
+
+# my_list = [1, 5, 10, 15, 20, 25, 30]
+
+# last_three_elements = my_list[-3:]
+# print("Last three elements:", last_three_elements)
+
+
+# my_list = [1, 5, 10, 15, 20, 25, 30]
+
+# skip_every_second_from_end = my_list[-1:-6:-2]
+# print(skip_every_second_from_end)
+
+
+# my_list = [1, 5, 10, 15, 20, 25, 30]
+
+# reversed_list = my_list[::-1]
+# print(reversed_list)
+
+#------------------{LIST COMPREHENSION}--------------------
+
+# numbers = [1, 2, 3, 4, 5]
+# squares = [num ** 2 for num in numbers]
+
+# print(squares)
+
+
+numbers = [1, 2, 3, 4, 5]
+odd_numbers = [num for num in numbers if num % 2 != 0]
+
+print(odd_numbers)
+
+
+# words = ["hoodie", "rivers", "cat", "monitor", "bag", "cup"]
+# short_words = [word for word in words if len(word) <= 5]
+
+# print(short_words)
+
+
+# numbers = [1, 2, 3, 4, 5]
+# pairs = [(num, num * 2) for num in numbers]
+
+# print(pairs)
+
+
+# songs = ['Neon Lights', 'Pieces', 'Everything']
+# uppercase_songs = [song.upper() for song in songs]
+
+# print(uppercase_songs)
+
+
+# my_matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+# transpose = [[row[i] for row in my_matrix] for i in range(len(my_matrix[0]))]
+
+# print(transpose)
+
+
+# python_versions = ["Python 2", "Python 3"]
+# python_versions.append("Python 3")
+
+# print(python_versions)
+
+
+python_modules = ["NumPy", "Pandas"]
+
+additional_modules = ["Matplotlib", "scikit-learn"]
+python_modules.extend(additional_modules)
+
+print(python_modules)
